@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    {# Se ele entrar no index.html e nao achar um title, irá usar esse aí (padrao) #}
+    {% block title %}
+        <title>Ecoleta</title>
+    {% endblock title %}
+    
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+    {% block styles %}{% endblock styles %}
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+
+    <div id = "{{ bodyId  }}" class="content">
+
+        {% block content %}
+        {% endblock content %}
+
+        
+   
+    </div>
+    
+    {% block modal %}{% endblock modal %}
+
+    {% block scripts %}{% endblock scripts %}
+
+
+</body>
+</html>
